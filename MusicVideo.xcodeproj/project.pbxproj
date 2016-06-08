@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		409E408B1D065E4D00C08665 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409E408A1D065E4D00C08665 /* APIManager.swift */; };
 		409EEC551D04566800FEDB27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409EEC541D04566800FEDB27 /* AppDelegate.swift */; };
 		409EEC571D04566800FEDB27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409EEC561D04566800FEDB27 /* ViewController.swift */; };
 		409EEC5A1D04566800FEDB27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409EEC581D04566800FEDB27 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		409E408A1D065E4D00C08665 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		409EEC511D04566800FEDB27 /* MusicVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		409EEC541D04566800FEDB27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		409EEC561D04566800FEDB27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		409EEC821D04589A00FEDB27 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				409E408A1D065E4D00C08665 /* APIManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				409E408B1D065E4D00C08665 /* APIManager.swift in Sources */,
 				409EEC571D04566800FEDB27 /* ViewController.swift in Sources */,
 				409EEC551D04566800FEDB27 /* AppDelegate.swift in Sources */,
 			);
@@ -516,6 +520,7 @@
 				409EEC7B1D04566800FEDB27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		409EEC7C1D04566800FEDB27 /* Build configuration list for PBXNativeTarget "MusicVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +529,7 @@
 				409EEC7E1D04566800FEDB27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		409EEC7F1D04566800FEDB27 /* Build configuration list for PBXNativeTarget "MusicVideoUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +538,7 @@
 				409EEC811D04566800FEDB27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
