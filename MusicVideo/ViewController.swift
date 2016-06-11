@@ -24,6 +24,8 @@ class ViewController: UIViewController {
 
     func didLoadData(videos: [Videos]) {
         
+        print(reachbilityStatus)
+        
 //        let alert = UIAlertController(title: (result), message: nil, preferredStyle: .Alert)
 //        
 //        let okAction = UIAlertAction(title: "Ok", style: .Default) {action -> Void in}
