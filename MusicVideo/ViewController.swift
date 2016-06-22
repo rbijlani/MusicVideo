@@ -8,16 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var videos = [Videos]()
     
    
+    @IBOutlet weak var tableView: UITableView!
+    
     @IBOutlet weak var displayLabel: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.dataSource = self
+        tableView.delegate = self
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "reachabilityStatusChanged", name: "ReachStatusChange", object: nil)
         
@@ -25,7 +30,7 @@ class ViewController: UIViewController {
         
         // Call API
         let api = APIManager()
-        api.loadData("https://itunes.apple.com/in/rss/topmusicvideos/limit=10/json",
+        api.loadData("https://itunes.apple.com/in/rss/topmusicvideos/limit=50/json",
                        completion: didLoadData)
     }
     
@@ -53,15 +58,6 @@ class ViewController: UIViewController {
         
         print(reachbilityStatus)
         
-//        let alert = UIAlertController(title: (result), message: nil, preferredStyle: .Alert)
-//        
-//        let okAction = UIAlertAction(title: "Ok", style: .Default) {action -> Void in}
-//        
-//        alert.addAction(okAction)
-//        
-//        self.presentViewController(alert, animated: true, completion: nil)
-//        print(result)
-        
         self.videos = videos
         
         for item in videos {
@@ -71,6 +67,33 @@ class ViewController: UIViewController {
         for (index, item) in videos.enumerate() {
             print("\(index) name = \(item.vName)")
         }
+        
+        tableView.reloadData()
+        
+    }
+    
+
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return videos.count
+    }
+    
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        
+        let video = videos[indexPath.row]
+        
+        cell.textLabel?.text = ( "\(indexPath.row + 1)" )
+        cell.detailTextLabel?.text = video.vName
+        
+        return cell
+    
     }
     
     
