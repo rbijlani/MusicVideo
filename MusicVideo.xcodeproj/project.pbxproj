@@ -18,6 +18,7 @@
 		409EEC5F1D04566800FEDB27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409EEC5D1D04566800FEDB27 /* LaunchScreen.storyboard */; };
 		409EEC6A1D04566800FEDB27 /* MusicVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409EEC691D04566800FEDB27 /* MusicVideoTests.swift */; };
 		409EEC751D04566800FEDB27 /* MusicVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409EEC741D04566800FEDB27 /* MusicVideoUITests.swift */; };
+		40BA62B21D1B81D500F247DE /* MusicVideoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA62B11D1B81D500F247DE /* MusicVideoTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		409EEC701D04566800FEDB27 /* MusicVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		409EEC741D04566800FEDB27 /* MusicVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideoUITests.swift; sourceTree = "<group>"; };
 		409EEC761D04566800FEDB27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40BA62B11D1B81D500F247DE /* MusicVideoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 		409EEC831D0458B100FEDB27 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				40BA62B11D1B81D500F247DE /* MusicVideoTVC.swift */,
 				409EEC561D04566800FEDB27 /* ViewController.swift */,
 			);
 			name = Controller;
@@ -326,6 +329,7 @@
 				409EEC551D04566800FEDB27 /* AppDelegate.swift in Sources */,
 				409E40951D0BE29200C08665 /* Reachability.m in Sources */,
 				409E408E1D0AE7D200C08665 /* Constants.swift in Sources */,
+				40BA62B21D1B81D500F247DE /* MusicVideoTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
