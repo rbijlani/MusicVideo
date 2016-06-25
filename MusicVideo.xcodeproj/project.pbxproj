@@ -19,6 +19,7 @@
 		409EEC6A1D04566800FEDB27 /* MusicVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409EEC691D04566800FEDB27 /* MusicVideoTests.swift */; };
 		409EEC751D04566800FEDB27 /* MusicVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409EEC741D04566800FEDB27 /* MusicVideoUITests.swift */; };
 		40BA62B21D1B81D500F247DE /* MusicVideoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA62B11D1B81D500F247DE /* MusicVideoTVC.swift */; };
+		40BA62B41D1CF36100F247DE /* MusicVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA62B31D1CF36100F247DE /* MusicVideoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		409EEC741D04566800FEDB27 /* MusicVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideoUITests.swift; sourceTree = "<group>"; };
 		409EEC761D04566800FEDB27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40BA62B11D1B81D500F247DE /* MusicVideoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoTVC.swift; sourceTree = "<group>"; };
+		40BA62B31D1CF36100F247DE /* MusicVideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				40BA62B11D1B81D500F247DE /* MusicVideoTVC.swift */,
+				40BA62B31D1CF36100F247DE /* MusicVideoTableViewCell.swift */,
 				409EEC561D04566800FEDB27 /* ViewController.swift */,
 			);
 			name = Controller;
@@ -326,6 +329,7 @@
 				409E408B1D065E4D00C08665 /* APIManager.swift in Sources */,
 				409EEC571D04566800FEDB27 /* ViewController.swift in Sources */,
 				409E40901D0AEA3D00C08665 /* MusicVideo.swift in Sources */,
+				40BA62B41D1CF36100F247DE /* MusicVideoTableViewCell.swift in Sources */,
 				409EEC551D04566800FEDB27 /* AppDelegate.swift in Sources */,
 				409E40951D0BE29200C08665 /* Reachability.m in Sources */,
 				409E408E1D0AE7D200C08665 /* Constants.swift in Sources */,

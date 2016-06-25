@@ -26,7 +26,7 @@ class MusicVideoTVC: UITableViewController {
         
         switch reachbilityStatus {
         case NOACCESS :
-            view.backgroundColor = UIColor.redColor()
+            //view.backgroundColor = UIColor.redColor()
             // Move back to main queue
             dispatch_async(dispatch_get_main_queue()) {
             let alert = UIAlertController(title: "No Internet Access", message: "Please make sure you are connected to the internet", preferredStyle: .Alert)
@@ -53,7 +53,7 @@ class MusicVideoTVC: UITableViewController {
         }
             
         default:
-            view.backgroundColor = UIColor.greenColor()
+            //view.backgroundColor = UIColor.greenColor()
             if videos.count > 0 {
                 print ("do not refresh API")
             } else {
@@ -90,7 +90,7 @@ class MusicVideoTVC: UITableViewController {
     func runAPI() {
         // Call API
         let api = APIManager()
-        api.loadData("https://itunes.apple.com/in/rss/topmusicvideos/limit=50/json", completion: didLoadData)
+        api.loadData("https://itunes.apple.com/in/rss/topmusicvideos/limit=200/json", completion: didLoadData)
 
     }
     
@@ -105,15 +105,16 @@ class MusicVideoTVC: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return videos.count
     }
+    
+    private struct storyboard {
+        static let cellReusableIdentifire = "cell"
+    }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier(storyboard.cellReusableIdentifire, forIndexPath: indexPath) as! MusicVideoTableViewCell
 
         // Configure the cell...
-        let video = videos[indexPath.row]
-        
-        cell.textLabel?.text = ( "\(indexPath.row + 1)" )
-        cell.detailTextLabel?.text = video.vName
+        cell.video = videos[indexPath.row]
         
         return cell
     }
