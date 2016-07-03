@@ -18,3 +18,7 @@ let NOACCESS = "No Internet Access"
 
 let WWAN = "Cellular Access Available"
 
+let APIKEY = "aeecfe11-c40b-4331-885a-ff451b33a7fe"
+
+let PASS_API = "web"
+

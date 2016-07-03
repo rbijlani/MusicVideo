@@ -3,3 +3,5 @@
 //
 
 #import "Reachability.h"
+
+#import <CommonCrypto/CommonCrypto.h>

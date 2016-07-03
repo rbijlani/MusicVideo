@@ -20,6 +20,7 @@
 		409EEC751D04566800FEDB27 /* MusicVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409EEC741D04566800FEDB27 /* MusicVideoUITests.swift */; };
 		40BA62B21D1B81D500F247DE /* MusicVideoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA62B11D1B81D500F247DE /* MusicVideoTVC.swift */; };
 		40BA62B41D1CF36100F247DE /* MusicVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BA62B31D1CF36100F247DE /* MusicVideoTableViewCell.swift */; };
+		40FA57AD1D2086BC009B1E05 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FA57AC1D2086BC009B1E05 /* HMAC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		409EEC761D04566800FEDB27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40BA62B11D1B81D500F247DE /* MusicVideoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoTVC.swift; sourceTree = "<group>"; };
 		40BA62B31D1CF36100F247DE /* MusicVideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoTableViewCell.swift; sourceTree = "<group>"; };
+		40FA57AC1D2086BC009B1E05 /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				409E408D1D0AE7D200C08665 /* Constants.swift */,
+				40FA57AC1D2086BC009B1E05 /* HMAC.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				TargetAttributes = {
 					409EEC501D04566800FEDB27 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 888ASBXE54;
 					};
 					409EEC641D04566800FEDB27 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -328,6 +332,7 @@
 			files = (
 				409E408B1D065E4D00C08665 /* APIManager.swift in Sources */,
 				409EEC571D04566800FEDB27 /* ViewController.swift in Sources */,
+				40FA57AD1D2086BC009B1E05 /* HMAC.swift in Sources */,
 				409E40901D0AEA3D00C08665 /* MusicVideo.swift in Sources */,
 				40BA62B41D1CF36100F247DE /* MusicVideoTableViewCell.swift in Sources */,
 				409EEC551D04566800FEDB27 /* AppDelegate.swift in Sources */,
@@ -478,10 +483,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MusicVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.roarsmart.MusicVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"SWIFT_INCLUDE_PATHS[arch=*]" = "$(SRCROOT)/CommonCrypto";
 				SWIFT_OBJC_BRIDGING_HEADER = "MusicVideo/MusicVideo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -492,10 +501,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MusicVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.roarsmart.MusicVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"SWIFT_INCLUDE_PATHS[arch=*]" = "$(SRCROOT)/CommonCrypto";
 				SWIFT_OBJC_BRIDGING_HEADER = "MusicVideo/MusicVideo-Bridging-Header.h";
 			};
 			name = Release;

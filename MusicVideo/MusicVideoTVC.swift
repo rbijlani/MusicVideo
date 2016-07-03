@@ -82,15 +82,22 @@ class MusicVideoTVC: UITableViewController {
         self.videos = videos
         
         for item in videos {
-            print("name = \(item.vName)")
+            //print("name = \(item.vName)")
         }
         
         for (index, item) in videos.enumerate() {
-            print("\(index) name = \(item.vName)")
+            //print("\(index) name = \(item.vName)")
         }
         
-        tableView.reloadData()
+        let timestamp = NSDate().timeIntervalSince1970
+        let APItoken = "\(APIKEY)\(timestamp)\(PASS_API)"
+        let hashcode = HMAC.hash(APItoken, algo: HMACAlgo.SHA1)
+        let hashData = HMAC.hashData(APItoken, algo: HMACAlgo.SHA1)
         
+        print("SHA1 Hash code APItoken = \(hashcode)")
+        print("SHA1 Hash code hashData = \(hashData)")
+        print("timestamp = \(timestamp)")
+        tableView.reloadData()
     }
     
     
@@ -174,3 +181,4 @@ class MusicVideoTVC: UITableViewController {
     */
 
 }
+
