@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40381AB11D2BE89F0014A35B /* MusicVideoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40381AB01D2BE89F0014A35B /* MusicVideoDetailVC.swift */; };
 		409E408B1D065E4D00C08665 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409E408A1D065E4D00C08665 /* APIManager.swift */; };
 		409E408E1D0AE7D200C08665 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409E408D1D0AE7D200C08665 /* Constants.swift */; };
 		409E40901D0AEA3D00C08665 /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409E408F1D0AEA3D00C08665 /* MusicVideo.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40381AB01D2BE89F0014A35B /* MusicVideoDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoDetailVC.swift; sourceTree = "<group>"; };
 		409E408A1D065E4D00C08665 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		409E408D1D0AE7D200C08665 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		409E408F1D0AEA3D00C08665 /* MusicVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideo.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		409EEC831D0458B100FEDB27 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				40381AB01D2BE89F0014A35B /* MusicVideoDetailVC.swift */,
 				40BA62B11D1B81D500F247DE /* MusicVideoTVC.swift */,
 				40BA62B31D1CF36100F247DE /* MusicVideoTableViewCell.swift */,
 				409EEC561D04566800FEDB27 /* ViewController.swift */,
@@ -339,6 +342,7 @@
 				409E40951D0BE29200C08665 /* Reachability.m in Sources */,
 				409E408E1D0AE7D200C08665 /* Constants.swift in Sources */,
 				40BA62B21D1B81D500F247DE /* MusicVideoTVC.swift in Sources */,
+				40381AB11D2BE89F0014A35B /* MusicVideoDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
